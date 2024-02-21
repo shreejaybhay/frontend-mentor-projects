@@ -1,11 +1,11 @@
 {
-  "name": "tailwind-css-projects",
+  "name": "frontendprojects",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./src/input.css -o ./tailwind-projects/output.css --watch"
+    "dev": "tailwindcss -i ./src/input.css -o ./frontend projects/output.css --watch"
 
   },
   "author": "",
