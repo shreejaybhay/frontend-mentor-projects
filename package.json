@@ -1,12 +1,11 @@
 {
-  "name": "frontendprojects",
+  "name": "frontend-mentor-projects",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./src/input.css -o ./frontend projects/output.css --watch"
-
+    "dev": "tailwindcss -i ./src/input.css -o ./frontend-projects/output.css --watch"
   },
   "author": "",
   "license": "ISC",
