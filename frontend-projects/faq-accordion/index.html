@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>faq-accordion-main</title>
+    <link rel="stylesheet" href="/frontend-projects/output.css" />
+  </head>
+  <body class="w-screen h-screen bg-[#F9EEFF]">
+    <div>
+      <div class="hidden w-screen md:block">
+        <img class="w-full" src="https://svgshare.com/i/13Rz.svg" alt="" />
+      </div>
+      <div class="block w-screen sm:hidden">
+        <img class="w-full" src="https://svgshare.com/i/13Tj.svg" alt="" />
+      </div>
+    </div>
+
+    <div
+      class="w-[90%] h-auto m-auto md:w-[40%] bg-[#ffffff] px-4 py-4 rounded-xl translate-y-[-150px] md:px-8 md:py-8"
+    >
+      <div class="flex gap-5 mb-6">
+        <div>
+          <img src="https://svgshare.com/i/13Tn.svg" alt="" />
+        </div>
+        <div>
+          <h1 class="text-4xl text-[#331837] font-extrabold">FAQs</h1>
+        </div>
+      </div>
+
+      <div class="w-full h-auto mb-3 border-b-2 border-[#FAFAFA]">
+        <div class="flex items-center justify-between w-full h-auto">
+          <h2 class="text-[#2E1732] font-medium text-lg mb-3 w-[90%]">
+            what is Fronted Mentor, and how will it help me?
+          </h2>
+          <div>
+            <img
+              onclick="onbtn()"
+              id="plusbtn"
+              class="cursor-pointer"
+              src="https://svgshare.com/i/13UU.svg"
+              alt=""
+            />
+            <img
+              onclick="ofbtn()"
+              id="minusbtn"
+              class="hidden cursor-pointer"
+              src="https://svgshare.com/i/13Tz.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="pdiv"
+          class="hidden mt-4 transition-all duration-500 ease-in-out"
+        >
+          <p class="text-[#B6ACB7]">
+            Frontend Mentor offers realistic coding challenges to help.
+            developers Improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for: portfolio building.
+            <br />
+            <br />
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full h-auto mb-3 border-b-2 border-[#FAFAFA]">
+        <div class="flex items-center justify-between w-full h-auto">
+          <h2 class="text-[#2E1732] font-medium text-lg mb-3 w-[90%]">
+            Is Frontend Mentor free?
+          </h2>
+          <div>
+            <img
+              onclick="onbtn1()"
+              id="plusbtn1"
+              class="cursor-pointer"
+              src="https://svgshare.com/i/13UU.svg"
+              alt=""
+            />
+            <img
+              onclick="ofbtn1()"
+              id="minusbtn1"
+              class="hidden cursor-pointer"
+              src="https://svgshare.com/i/13Tz.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="pdiv1"
+          class="hidden mt-3 transition-all duration-500 ease-in-out"
+        >
+          <p class="text-[#B6ACB7]">
+            Frontend Mentor offers realistic coding challenges to help.
+            developers Improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for: portfolio building.
+            <br />
+            <br />
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full h-auto mb-3 border-b-2 border-[#FAFAFA]">
+        <div class="flex items-center justify-between w-full h-auto">
+          <h2 class="text-[#2E1732] font-medium text-lg mb-3 w-[90%]">
+            Can I use Frontend Mentor projects in my portfolio?
+          </h2>
+          <div>
+            <img
+              onclick="onbtn2()"
+              id="plusbtn2"
+              class="cursor-pointer"
+              src="https://svgshare.com/i/13UU.svg"
+              alt=""
+            />
+            <img
+              onclick="ofbtn2()"
+              id="minusbtn2"
+              class="hidden cursor-pointer"
+              src="https://svgshare.com/i/13Tz.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="pdiv2"
+          class="hidden mt-3 transition-all duration-500 ease-in-out"
+        >
+          <p class="text-[#B6ACB7]">
+            Frontend Mentor offers realistic coding challenges to help.
+            developers Improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for: portfolio building.
+            <br />
+            <br />
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full h-auto mb-2 border-b-2 border-[#FAFAFA]">
+        <div class="flex items-center justify-between w-full h-auto">
+          <h2 class="text-[#2E1732] font-medium text-lg mb-3 w-[90%]">
+            How can I get help if I'm stuck on a challenges?
+          </h2>
+          <div>
+            <img
+              onclick="onbtn3()"
+              id="plusbtn3"
+              class="cursor-pointer"
+              src="https://svgshare.com/i/13UU.svg"
+              alt=""
+            />
+            <img
+              onclick="ofbtn3()"
+              id="minusbtn3"
+              class="hidden cursor-pointer"
+              src="https://svgshare.com/i/13Tz.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="pdiv3"
+          class="hidden mt-2 transition-all duration-500 ease-in-out"
+        >
+          <p class="text-[#B6ACB7]">
+            Frontend Mentor offers realistic coding challenges to help.
+            developers Improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for: portfolio building.
+            <br />
+            <br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
