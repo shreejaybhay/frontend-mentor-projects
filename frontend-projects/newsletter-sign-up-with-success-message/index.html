@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>newsletter-sign-up-with-success-message</title>
+  <link rel="stylesheet" href="output.css" />
+</head>
+<body class="w-screen h-dvh bg-[#36384D] justify-center items-center flex overflow-x-hidden">
+  <div id="mainDiv" class="grid w-auto h-auto py-4 bg-white rounded-2xl md:grid-cols-2 place-content-center md:w-auto md:py-4 md:px-4 md:flex md:my-10">
+ <div class="block md:hidden">
+        <img class="w-full" src="illustration-sign-up-mobile.svg" alt="" />
+      </div>
+
+      <div
+        class="mx-3 mt-6 md:my-0 md:justify-center md:flex md:flex-col md:w-[400px] md:mx-10"
+      >
+        <div>
+          <h1
+            class="md:text-6xl font-semibold text-[#232742] md:text-center text-3xl"
+          >
+            Stay updated!
+          </h1>
+        </div>
+
+        <div class="mb-3 ml-3 mt-5 text-[#333146] md:w-[85%]">
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+
+        <div class="ml-3">
+          <ul class="">
+            <li class="flex items-center gap-2 mb-3">
+              <img src="icon-list.svg" alt="" /><span
+                class="w-[85%] md:w-auto text-[#333146]"
+                >Product discovery and building what matters</span
+              >
+            </li>
+            <li class="flex items-center gap-2 mb-3 text-[#333146]">
+              <img src="icon-list.svg" alt="" /> Measuring to ensure updates are
+              a success
+            </li>
+            <li class="flex items-center gap-2 text-[#333146]">
+              <img src="icon-list.svg" alt="" /> And much more!
+            </li>
+          </ul>
+        </div>
+
+        <form class="flex flex-col" onsubmit="return validateForm()">
+          <label class="mt-6 text-[#3f3f48] flex justify-between"
+            >Email address <span id="emailError" class="text-red-500"></span
+          ></label>
+          <input
+            id="emailInput"
+            class="w-auto h-16 px-4 my-4 text-base font-normal text-black border-2 border-gray-300 rounded-lg outline-none"
+            type="email"
+            placeholder="email@company.com"
+            onchange="validateEmail()"
+          />
+
+          <button
+          id="opendiv"
+            class="w-auto h-16 rounded-lg drop-shadow-lg bg-[#232742] text-white"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+      <div class="hidden object-cover md:block md:w-[360px]">
+        <img src="illustration-sign-up-desktop.svg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div id="success-state" class="absolute p-10 m-4 bg-white rounded-3xl md:w-[30%] hidden">
+  <div>
+        <img class="mb-4 w-14" src="icon-success.svg" alt="" />
+      </div>
+      <div>
+        <h1 class="text-[#252742] text-4xl font-medium">Thanks for</h1>
+        <h1 class="text-[#252742] text-4xl mb-3 font-medium">subscribing!</h1>
+        <p class="text-[#3E3F48] text-base font-normal mb-4">
+          A confirmation email has been send to your email. Please open it and
+          click the button inside to confirm your subscription
+        </p>
+      </div>
+      <div>
+        <button
+          onclick="closediv()"
+          class="bg-[#232742] w-full py-3 rounded-md text-white font-medium"
+        >
+          Dismiss message
+        </button>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
