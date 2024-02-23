@@ -2,8 +2,11 @@
 module.exports = {
   content: ["./frontend-projects/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        hankengrotesk: ["Hanken Grotesk", "sans-serif"],
+      },
+    },
   },
   plugins: [],
-}
-
+};
