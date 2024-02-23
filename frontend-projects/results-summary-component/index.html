@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="/frontend-projects/output.css" />
   </head>
   <body class="flex items-center justify-center w-screen h-screen bg-white">
-    <div class="bg-red-300 h-[450px] w-[600px] rounded-3xl">
+    <div
+      class="md:h-[450px] md:w-[600px] rounded-3xl md:flex w-full h-screen shadow-2xl"
+    >
       <div
-        class="w-[300px] h-[450px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#4835F1] to-[#6641FF] rounded-3xl flex flex-col justify-center items-center"
+        class="md:w-[300px] md:h-[450px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#4835F1] to-[#6641FF] md:rounded-3xl flex flex-col justify-center items-center md:py-0 py-6 w-full rounded-b-3xl"
       >
         <div>
           <h1 class="text-xl font-medium text-[#CDC0FF] font-hankengrotesk">
@@ -30,12 +32,99 @@
         </div>
         <div class="text-center text-white">
           <h1 class="mb-1 text-3xl font-medium font-hankengrotesk">Great</h1>
-          <p class="font-medium font-hankengrotesk">
-            You scored heigher than 65% of
+          <p class="font-medium font-hankengrotesk w-[78%] mx-auto flex-wrap">
+            You scored heigher than 65% of the people who have taken there
+            tests.
           </p>
-          <p class="font-hankengrotesk">the people who have taken</p>
-          <p>there tests.</p>
         </div>
+      </div>
+
+      <div
+        class="h-[450px] md:w-[300px] flex flex-col justify-center items-start px-8 w-full"
+      >
+        <div class="w-full">
+          <h1 class="text-2xl font-semibold text-[#2C304B] font-hankengrotesk">
+            Summary
+          </h1>
+        </div>
+
+        <div class="w-full">
+          <button class="flex justify-between w-full py-3 mt-6">
+            <div class="flex gap-2">
+              <img src="icon-reaction.svg" alt="" />
+              <h1 class="text-[#CB5450] font-semibold font-hankengrotesk">
+                Reaction
+              </h1>
+            </div>
+            <div>
+              <h2 class="text-[#3B4055] font-semibold font-hankengrotesk">
+                80
+                <span class="text-[#9894A1] font-semibold font-hankengrotesk"
+                  >/100</span
+                >
+              </h2>
+            </div>
+          </button>
+        </div>
+        <div class="w-full">
+          <button class="flex justify-between w-full py-3 mt-4">
+            <div class="flex gap-2">
+              <img src="icon-memory.svg" alt="" />
+              <h1 class="text-[#E6B560] font-semibold font-hankengrotesk">
+                Memory
+              </h1>
+            </div>
+            <div>
+              <h2 class="text-[#3B4055] font-semibold font-hankengrotesk">
+                92
+                <span class="text-[#9894A1] font-semibold font-hankengrotesk"
+                  >/100</span
+                >
+              </h2>
+            </div>
+          </button>
+        </div>
+        <div class="w-full">
+          <button class="flex justify-between w-full py-3 mt-4">
+            <div class="flex gap-2">
+              <img src="icon-verbal.svg" alt="" />
+              <h1 class="text-[#48A18B] font-semibold font-hankengrotesk">
+                Verbal
+              </h1>
+            </div>
+            <div>
+              <h2 class="text-[#3B4055] font-semibold font-hankengrotesk">
+                61
+                <span class="text-[#9894A1] font-semibold font-hankengrotesk"
+                  >/100</span
+                >
+              </h2>
+            </div>
+          </button>
+        </div>
+        <div class="w-full">
+          <button class="flex justify-between w-full py-3 mt-4">
+            <div class="flex gap-2">
+              <img src="icon-visual.svg" alt="" />
+              <h1 class="text-[#2B3086] font-semibold font-hankengrotesk">
+                Visual
+              </h1>
+            </div>
+            <div>
+              <h2 class="text-[#3B4055] font-semibold font-hankengrotesk">
+                72
+                <span class="text-[#9894A1] font-semibold font-hankengrotesk"
+                  >/100</span
+                >
+              </h2>
+            </div>
+          </button>
+        </div>
+        <button
+          class="w-full bg-[#303B5A] mt-6 py-3 rounded-full text-white font-semibold hover:bg-[#4633ED] duration-300 font-hankengrotesk"
+        >
+          Continue
+        </button>
       </div>
     </div>
   </body>
