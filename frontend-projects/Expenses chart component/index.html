@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses chart component</title>
+    <link rel="stylesheet" href="/frontend-projects/output.css" />
+  </head>
+  <body class="bg-[#F7E9DC] flex justify-center items-center w-screen h-screen">
+    <div class="flex flex-col h-auto md:w-[450px] justify-center w-[360px]">
+      <div
+        class="bg-[#EC755D] flex justify-between items-center py-4 px-4 rounded-2xl"
+      >
+        <div>
+          <p class="text-[#FFDACB] text-sm font-normal font-sans mb-1">
+            My balance
+          </p>
+          <h1 class="font-sans text-4xl font-semibold text-white">$921.48</h1>
+        </div>
+        <div>
+          <img src="logo.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="bg-[#FFFCF7] w-full rounded-2xl px-4 py-4 mt-4">
+        <div>
+          <h1
+            class="text-[#382217] font-bold font-sans text-2xl tracking-[1px]"
+          >
+            Spending-Last 7 days
+          </h1>
+        </div>
+
+        <div
+          class="w-full h-[247px] border-b-2 border-[#F3ECE2] flex md:justify-between justify-center  items-end mt-14 pb-6 mb-6"
+        >
+        
+        <div class="flex flex-col items-center justify-center group">
+            <div class="p-1 bg-[#372214] text-white rounded-lg mb-2 md:w-14 w-auto text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-sans md:font-medium font-normal">$25.46</div>
+            <div class="md:w-12 h-12 w-8 rounded-lg bg-[#EC755D] group-hover:bg-[#FF9B87] duration-300"></div>
+            <p class="text-[#98938D] font-sans font-medium">mon</p>
+        </div>
+        
+        
+
+          <div class="flex flex-col items-center justify-center group">
+            <div class="p-1 bg-[#372214] text-white rounded-lg mb-2 md:w-14 w-auto text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-sans md:font-medium font-normal">$25.46</div>
+            <div class="md:w-12 h-24 w-8 rounded-lg bg-[#EC755D] hover:bg-[#FF9B87] duration-300"></div>
+            <p class="text-[#98938D] font-sans font-medium">tue</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center group">
+            <div class="p-1 bg-[#372214] text-white rounded-lg mb-2 md:w-14 w-auto text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-sans md:font-medium font-normal">$25.46</div>
+            <div class="md:w-12 h-40 w-8 rounded-lg bg-[#76B5BC] hover:bg-[#B4DFE5] duration-300"></div>
+            <p class="text-[#98938D] font-sans font-medium">wed</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center group">
+            <div class="p-1 bg-[#372214] text-white rounded-lg mb-2 md:w-14 w-auto text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-sans md:font-medium font-normal">$25.46</div>
+            <div class="md:w-12 h-20 w-8 rounded-lg bg-[#EC755D] hover:bg-[#FF9B87] duration-300"></div>
+            <p class="text-[#98938D] font-sans font-medium">thu</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center group">
+            <div class="p-1 bg-[#372214] text-white rounded-lg mb-2 md:w-14 w-auto text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-sans md:font-medium font-normal">$25.46</div>
+            <div class="md:w-12 h-14 w-8 rounded-lg bg-[#EC755D] hover:bg-[#FF9B87] duration-300"></div>
+            <p class="text-[#98938D] font-sans font-medium">fri</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center group">
+            <div class="p-1 bg-[#372214] text-white rounded-lg mb-2 md:w-14 w-auto text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-sans md:font-medium font-normal">$25.46</div>
+            <div class="md:w-12 h-28 w-8 rounded-lg bg-[#EC755D] hover:bg-[#FF9B87] duration-300"></div>
+            <p class="text-[#98938D] font-sans font-medium">sat</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center group">
+
+            <div class="p-1 bg-[#372214] text-white rounded-lg mb-2 md:w-14 w-auto text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-sans md:font-medium font-normal">$25.46</div>
+            
+            <div class="md:w-12 h-16 w-8 rounded-lg bg-[#EC755D] hover:bg-[#FF9B87] duration-300"></div>
+            <p class="text-[#98938D] font-sans font-medium">sun</p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between">
+            <div>
+                <p class="text-[#AEA5A0] font-sans text-base font-medium">Total this month</p>
+                <h1 class="text-[#382115] font-sans text-4xl font-bold">$478.33</h1>
+            </div>
+            <div class="flex flex-col items-end ">
+                <p class="text-[#382115] font-sans text-base font-bold">+2.4%</p>
+                <p class="text-[#AEA5A0] font-sans text-base font-medium">from last month</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
