@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      #mobileMenu {
+        visibility: none;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="overflow-hidden w-dvw h-dvh">
+    <nav class="flex items-center justify-between hidden p-5 md:block md:flex">
+      <div class="flex items-center">
+        <div class="flex items-end">
+          <img
+            src="/frontend-projects/Intro section with dropdown navigation/images/logo.svg"
+            alt="logo"
+          />
+        </div>
+        <div class="ml-14 text-[#5A5A5A] font-semibold text-base">
+          <ul class="flex gap-10">
+            <li class="">
+              <a
+                id="fea-drop-down"
+                class="flex items-center gap-1 hover:text-black"
+                href="#"
+                >Features
+                <i id="change-down" class="mt-1 bx bxs-chevron-down"></i>
+                <i
+                  id="change-up"
+                  style="display: none"
+                  class="mt-1 bx bxs-chevron-up"
+                ></i>
+              </a>
+
+              <div
+                id="hide-div-fea"
+                class="flex flex-col gap-2 absolute mt-3 bg-white p-4 left-[115px] rounded-lg opacity-0 transition-opacity duration-300 shadow-xl"
+              >
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <img
+                    src="/frontend-projects/Intro section with dropdown navigation/images/icon-todo.svg"
+                    alt=""
+                  />
+                  <p>Todo List</p>
+                </div>
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <img
+                    src="/frontend-projects/Intro section with dropdown navigation/images/icon-calendar.svg"
+                    alt=""
+                  />
+                  <p>calendar</p>
+                </div>
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <img
+                    src="/frontend-projects/Intro section with dropdown navigation/images/icon-reminders.svg"
+                    alt=""
+                  />
+                  <p>Reminders</p>
+                </div>
+                <div class="flex items-center gap-3 cursor-pointer">
+                  <img
+                    src="/frontend-projects/Intro section with dropdown navigation/images/icon-planning.svg"
+                    alt=""
+                  />
+                  <p>Plannimg</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a
+                id="com-drop-down"
+                class="flex items-center gap-1 hover:text-black"
+                href="#"
+                >Company
+                <i id="change-down1" class="mt-1 bx bxs-chevron-down"></i>
+                <i
+                  id="change-up1"
+                  style="display: none"
+                  class="mt-1 bx bxs-chevron-up"
+                ></i>
+              </a>
+
+              <div
+                id="hide-div-com"
+                class="absolute flex flex-col gap-2 p-4 mt-3 transition-opacity duration-300 bg-white rounded-lg shadow-xl opacity-0"
+              >
+                <div class="cursor-pointer"><p>History</p></div>
+                <div class="cursor-pointer"><p>Our Team</p></div>
+                <div class="cursor-pointer"><p>Blog</p></div>
+              </div>
+            </li>
+
+            <li><a class="hover:text-black" href="#">Careers</a></li>
+            <li><a class="hover:text-black" href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex gap-10 text-[#5A5A5A] font-semibold text-base">
+        <button class="cursor-pointer hover:text-black">Login</button>
+        <button
+          class="rounded-xl border-2 hover:text-black cursor-pointer py-1 px-3 border-[#BBBBBB]"
+        >
+          Register
+        </button>
+      </div>
+    </nav>
+
+    <nav
+      class="flex items-center justify-between block p-5 overflow-y-hidden md:hidden"
+    >
+      <div>
+        <img
+          src="/frontend-projects/Intro section with dropdown navigation/images/logo.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img id="opennav" src="menu-regular-36.png" alt="" />
+      </div>
+    </nav>
+
+    <div
+      id="blackbg"
+      class="absolute top-0 hidden w-screen h-screen overflow-y-hidden transition-all duration-300 bg-black bg-opacity-50"
+    ></div>
+    <div
+      class="absolute w-[75%] h-[100vh] bg-white block md:hidden top-0 right-0 z-20 slided-right"
+      id="mobileMenu"
+    >
+      <div class="w-full h-auto p-4">
+        <div class="flex items-end justify-end w-full">
+          <img id="closenav" class="w-11" src="x-regular-36.png" />
+        </div>
+      </div>
+      <div class="flex flex-col gap-5 p-5">
+        <div class="text-[#5A5A5A] font-semibold text-lg">
+          <p id="mob-fea-drop-down" class="flex items-center gap-2">
+            Features
+            <i id="mob-change-down" class="mt-1 bx bxs-chevron-down"></i>
+            <i
+              id="mob-change-up"
+              style="display: none"
+              class="mt-1 bx bxs-chevron-up"
+            ></i>
+          </p>
+          <div
+            id="mob-hide-div-fea"
+            style="display: none"
+            class="flex flex-col gap-2 mt-3 bg-white p-4 left-[15px] rounded-lg transition-opacity duration-300 shadow-xl w-[145px]"
+          >
+            <div class="flex items-center gap-3 cursor-pointer">
+              <img
+                src="/frontend-projects/Intro section with dropdown navigation/images/icon-todo.svg"
+                alt=""
+              />
+              <p>Todo List</p>
+            </div>
+            <div class="flex items-center gap-3 cursor-pointer">
+              <img
+                src="/frontend-projects/Intro section with dropdown navigation/images/icon-calendar.svg"
+                alt=""
+              />
+              <p>calendar</p>
+            </div>
+            <div class="flex items-center gap-3 cursor-pointer">
+              <img
+                src="/frontend-projects/Intro section with dropdown navigation/images/icon-reminders.svg"
+                alt=""
+              />
+              <p>Reminders</p>
+            </div>
+            <div class="flex items-center gap-3 cursor-pointer">
+              <img
+                src="/frontend-projects/Intro section with dropdown navigation/images/icon-planning.svg"
+                alt=""
+              />
+              <p>Plannimg</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-[#5A5A5A] font-semibold text-lg">
+          <p id="mob-com-drop-down" class="flex items-center gap-2">
+            Company
+            <i id="mob-com-change-down" class="mt-1 bx bxs-chevron-down"></i>
+            <i
+              id="mob-com-change-up"
+              style="display: none"
+              class="mt-1 bx bxs-chevron-up"
+            ></i>
+          </p>
+          <div
+            id="mob-hide-div-com"
+            class="flex flex-col gap-2 p-4 mt-3 transition-opacity duration-300 bg-white rounded-lg shadow-xl hidden w-[115px]"
+          >
+            <div class="cursor-pointer"><p>History</p></div>
+            <div class="cursor-pointer"><p>Our Team</p></div>
+            <div class="cursor-pointer"><p>Blog</p></div>
+          </div>
+        </div>
+        <div class="text-[#5A5A5A] font-semibold text-lg">
+          <p class="">Careers</p>
+        </div>
+        <div class="text-[#5A5A5A] font-semibold text-lg">
+          <p class="">About</p>
+        </div>
+      </div>
+      <div class="flex flex-col w-full px-10 py-4 mx-auto">
+        <button class="py-3 text-[#5A5A5A] font-semibold text-lg">Login</button>
+        <button
+          class="rounded-xl border-2 hover:text-black cursor-pointer py-3 border-[#BBBBBB] text-[#5A5A5A] font-semibold text-lg"
+        >
+          Register
+        </button>
+      </div>
+    </div>
+
+    <main class="w-screen lg:justify-center lg:items-center lg:flex">
+      <div class="hidden w-screen md:block lg:hidden">
+        <div
+          class="flex items-center justify-center w-full -z-10 md:block lg:hidden"
+        >
+          <img
+            class="md:h-[400px] md:w-screen object-top object-cover"
+            src="/frontend-projects/Intro section with dropdown navigation/images/image-hero-mobile.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="block w-screen md:hidden lg:hidden">
+        <div
+          class="flex items-center justify-center w-full -z-10 md:block lg:hidden"
+        >
+          <img
+            class="md:h-[400px] md:w-screen object-top object-cover"
+            src="/frontend-projects/Intro section with dropdown navigation/images/image-hero-mobile.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="w-full h-full">
+        <div class="flex flex-col items-center justify-center gap-10 mt-28">
+          <div class="flex flex-col items-start justify-center w-auto mx-auto">
+            <h1
+              class="text-8xl font-bold mb-10 text-[#151515] md:text-7xl lg:text-8xl hidden lg:block"
+            >
+              Make <br />
+              remotr work
+            </h1>
+            <h1
+              class="text-8xl font-bold mb-10 text-[#151515] md:text-7xl lg:text-8xl hidden md:block lg:hidden"
+            >
+              Make remotr work
+            </h1>
+            <h1
+              class="text-4xl text-center mx-auto font-bold mb-10 text-[#151515] block md:hidden"
+            >
+              Make remotr work
+            </h1>
+            <p
+              class="text-[#606060] font-semibold mb-10 w-[350px] text-center lg:text-start"
+            >
+              Get your team in sync. no matter your location. Streamline
+              processes. create team rituals, and watch productivity soar.
+            </p>
+            <button
+              class="px-3 py-2 mx-auto font-semibold text-white duration-300 bg-black rounded-lg hover:bg-transparent hover:text-black hover:ring-2 hover:ring-black lg:mx-0"
+            >
+              Learn more
+            </button>
+          </div>
+          <div class="flex items-center gap-3 lg:gap-16">
+            <img
+              class="w-20 lg:w-24"
+              src="/frontend-projects/Intro section with dropdown navigation/images/client-databiz.svg"
+              alt=""
+            />
+            <img
+              class="w-20 lg:w-24"
+              src="/frontend-projects/Intro section with dropdown navigation/images/client-audiophile.svg"
+              alt=""
+            />
+            <img
+              class="w-20 lg:w-24"
+              src="/frontend-projects/Intro section with dropdown navigation/images/client-meet.svg"
+              alt=""
+            />
+            <img
+              class="w-20 lg:w-24"
+              src="/frontend-projects/Intro section with dropdown navigation/images/client-maker.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center w-full lg:h-screen -z-10">
+        <img
+          class="h-[500px] object-cover hidden lg:block ml-6"
+          src="/frontend-projects/Intro section with dropdown navigation/images/image-hero-desktop.png"
+          alt=""
+        />
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
