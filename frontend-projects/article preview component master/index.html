@@ -1,91 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>article-preview-component-master</title>
     <link rel="stylesheet" href="output.css" />
     <style>
-        .triangle-down {
-            width: 32px;
-            height: 32px;
-            border-left: 25px solid transparent;
-            border-right: 25px solid transparent;
-            border-top: 50px solid #49556C;
-        }
+      .triangle-down {
+        width: 32px;
+        height: 32px;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 50px solid #49556c;
+      }
     </style>
-</head>
+  </head>
 
-<body class="w-screen h-screen flex justify-center items-center bg-[#EDF2F8]">
-    <div class="w-[750px] h-[300px] bg-white rounded-lg">
-        <div class="w-full h-full flex">
-            <img class="w-[300px] h-[300px] object-left object-cover rounded-l-lg" src="drawers.jpg" alt="" />
-            <div class="p-7 flex flex-col justify-between">
-                <div>
-                    <h1 class="text-[#505764] font-bold text-2xl">
-                        Shift the overall look and feel by adding this wonderful touches
-                        to furniture in the house
-                    </h1>
-                    <p class="text-[#AEB5BD] mt-3">
-                        Ever been a room and felt like something was missing? Perhaps it
-                        felt slightly bare univiting I've got some simplw tips to help you
-                        make any room feel complete.
-                    </p>
-                </div>
+  <body
+    class="w-screen h-screen flex justify-center items-center bg-[#EDF2F8] flex-col overflow-hidden"
+    style="overflow: hidden"
+  >
+    <div
+      class="w-[750px] h-[300px] bg-white rounded-lg hidden md:block overflow-hidden"
+    >
+      <div class="w-full h-full flex">
+        <img
+          class="w-[300px] h-[300px] object-left object-cover rounded-l-lg"
+          src="drawers.jpg"
+          alt=""
+        />
+        <div class="p-7 flex flex-col justify-between">
+          <div>
+            <h1 class="text-[#505764] font-bold text-2xl">
+              Shift the overall look and feel by adding this wonderful touches
+              to furniture in the house
+            </h1>
+            <p class="text-[#AEB5BD] mt-3">
+              Ever been a room and felt like something was missing? Perhaps it
+              felt slightly bare univiting I've got some simplw tips to help you
+              make any room feel complete.
+            </p>
+          </div>
 
-                <div class="flex items-center justify-between mt-7">
-                    <div class="flex items-center gap-3">
-                        <img class="w-[44px] rounded-full" src="avatar-michelle.jpg" alt="" />
-                        <div>
-                            <h1 class="font-bold text-[#505764]">Michelle Appleton</h1>
-                            <p class="font-normal text-[#505764]">28 jun 2020</p>
-                        </div>
-                    </div>
-
-                    <div id="popup" class="opacity-0 transition-opacity duration-300">
-                        <div class="w-auto h-auto bg-[#49556C] rounded-lg absolute right-[250px] bottom-[240px] z-20">
-
-                            <div class="flex gap-4 py-3 px-6 items-center justify-center">
-                                <p class="text-[#8492A8]">Share</p>
-                                <img class="object-cover w-7 cursor-pointer" src="icon-facebook.svg" alt="">
-                                <img class="object-cover w-7 cursor-pointer" src="icon-twitter.svg" alt="">
-                                <img class="object-cover w-7 cursor-pointer" src="icon-pinterest.svg" alt="">
-                            </div>
-
-                        </div>
-                        <div class="triangle-down absolute right-[330px] bottom-[220px]"></div>
-                    </div>
-
-
-                    <div id="share-btn"
-                        class="bg-[#EEF0F4] rounded-full size-9 flex items-center justify-center cursor-pointer">
-                        <img src="icon-share.svg" alt="" />
-                    </div>
-                </div>
+          <div class="flex items-center justify-between mt-7">
+            <div class="flex items-center gap-3">
+              <img
+                class="w-[44px] rounded-full"
+                src="avatar-michelle.jpg"
+                alt=""
+              />
+              <div>
+                <h1 class="font-bold text-[#505764]">Michelle Appleton</h1>
+                <p class="font-normal text-[#505764]">28 jun 2020</p>
+              </div>
             </div>
+
+            <div id="popup" class="opacity-0 transition-opacity duration-300">
+              <div
+                class="w-auto h-auto bg-[#49556C] rounded-lg absolute right-[250px] bottom-[240px] z-20"
+              >
+                <div class="flex gap-4 py-3 px-6 items-center justify-center">
+                  <p class="text-[#8492A8]">Share</p>
+                  <img
+                    class="object-cover w-7 cursor-pointer"
+                    src="icon-facebook.svg"
+                    alt=""
+                  />
+                  <img
+                    class="object-cover w-7 cursor-pointer"
+                    src="icon-twitter.svg"
+                    alt=""
+                  />
+                  <img
+                    class="object-cover w-7 cursor-pointer"
+                    src="icon-pinterest.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="triangle-down absolute right-[330px] bottom-[220px]"
+              ></div>
+            </div>
+
+            <div
+              id="share-btn"
+              class="bg-[#EEF0F4] rounded-full size-9 flex items-center justify-center cursor-pointer"
+            >
+              <img src="icon-share.svg" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+
+    <div
+      style="overflow: hidden"
+      class="w-[350px] h-auto bg-white md:hidden rounded-xl"
+    >
+      <div>
+        <img class="rounded-t-xl" src="drawers.jpg" alt="" />
+      </div>
+
+      <div class="w-[300px] mx-auto">
+        <div class="mt-5 mb-10">
+          <h1 class="text-[#505764] font-bold text-xl">
+            Shift the overall look and feel by adding this wonderful touches to
+            furniture in the house
+          </h1>
+          <p class="text-[#AEB5BD] mt-3">
+            Ever been a room and felt like something was missing? Perhaps it
+            felt slightly bare univiting I've got some simplw tips to help you
+            make any room feel complete.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center w-[300px] mx-auto mb-5">
+        <div class="flex items-center gap-3">
+          <img class="w-[44px] rounded-full" src="avatar-michelle.jpg" alt="" />
+          <div>
+            <h1 class="font-bold text-[#505764]">Michelle Appleton</h1>
+            <p class="font-normal text-[#505764]">28 jun 2020</p>
+          </div>
+        </div>
+        <div
+          id="share-btn-mob"
+          class="bg-[#EEF0F4] rounded-full size-9 flex items-center justify-center cursor-pointer"
+        >
+          <img src="icon-share.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="mob-hiden-div"
+      class="flex justify-between items-center w-[350px] mx-auto mb-5 px-6 py-4 text-[#79869B] rounded-lg shadow-md md:hidden transition-all duration-200 opacity-0 bg-[#49556A]"
+      style="overflow: hidden"
+    >
+      <div class="flex items-center gap-3">
+        <h1>SHARE</h1>
+        <div class="flex gap-4 items-center">
+          <img src="icon-facebook.svg" alt="" />
+          <img src="icon-twitter.svg" alt="" />
+          <img src="icon-pinterest.svg" alt="" />
+        </div>
+      </div>
+      <div
+        id="close-share-btn"
+        class="bg-[#EEF0F4] rounded-full size-9 flex items-center justify-center cursor-pointer"
+      >
+        <img src="icon-share.svg" alt="" />
+      </div>
     </div>
 
     <script>
-        const sharebtn = document.getElementById("share-btn");
-        const popup = document.getElementById("popup");
+      const sharebtn = document.getElementById("share-btn");
+      const popup = document.getElementById("popup");
 
-        let hideUnhide = 0;
+      let hideUnhide = 0;
 
-        sharebtn.addEventListener("click", function () {
-            if (hideUnhide == 0) {
-                popup.style.opacity = "1";
-                hideUnhide = 1;
-            } else {
-                popup.style.opacity = "0"
-                hideUnhide = 0;
-            }
-        })
+      sharebtn.addEventListener("click", function () {
+        if (hideUnhide == 0) {
+          popup.style.opacity = "1";
+          hideUnhide = 1;
+        } else {
+          popup.style.opacity = "0";
+          hideUnhide = 0;
+        }
+      });
 
+      const sharebtnmob = document.getElementById("share-btn-mob");
+      const closesharebtn = document.getElementById("close-share-btn");
+      const mobhidendiv = document.getElementById("mob-hiden-div");
+
+      sharebtnmob.addEventListener("click", function () {
+        mobhidendiv.style.transform = "translateY(-100%)";
+        mobhidendiv.style.opacity = "1";
+      });
+      closesharebtn.addEventListener("click", function () {
+        mobhidendiv.style.transform = "translateY(0%)";
+        mobhidendiv.style.opacity = "0";
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
