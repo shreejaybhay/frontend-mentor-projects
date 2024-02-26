@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylo data storage component</title>
+    <link rel="stylesheet" href="/frontend-projects/output.css">
+    <style>
+        /* Add your custom CSS here */
+        @media (max-width: 768px) {
+            .left, .right {
+                width: 100%;
+                max-width: none;
+            }
+            .md:flex {
+                flex-direction: column;
+                align-items: center;
+            }
+            .md:items-end {
+                align-items: stretch;
+            }
+            .md:justify-between {
+                justify-content: center;
+            }
+            .right {
+                margin-top: 20px; /* Adjust margin as needed */
+            }
+            .hidden.md\:block {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin-top: 20px; /* Adjust margin as needed */
+            }
+            .absolute.md\:w-full {
+                max-width: 100%;
+                width: 100%;
+            }
+            .bg {
+              display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#0B122B] w-screen h-screen overflow-hidden flex justify-center items-center">
+
+<div class="md:w-[800px] md:h-[150px] md:flex md:items-end md:justify-between">
+    <div class="left md:w-[300px] h-full bg-[#1D2C69] rounded-l-xl rounded-tr-[90px] rounded-br-xl p-5 flex flex-col gap-5 justify-center w-[250px] md:mb-0">
+        <div>
+            <img src="logo.svg" alt="">
+        </div>
+
+        <div class="flex gap-4 items-center">
+            <div class="w-11 h-11 rounded-lg bg-[#0D112D] flex justify-center items-center cursor-pointer">
+                <img src="icon-document.svg" alt="">
+            </div>
+
+            <div class="w-11 h-11 rounded-lg bg-[#0D112D] flex justify-center items-center cursor-pointer">
+                <img src="icon-folder.svg" alt="">
+            </div>
+
+            <div class="w-11 h-11 rounded-lg bg-[#0D112D] flex justify-center items-center cursor-pointer">
+                <img src="icon-upload.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="right w-[480px] h-[100px] bg-[#1D2C69] rounded-xl relative">
+        <div class="w-28 h-14 bg-white absolute right-7 -top-8 rounded-t-xl rounded-bl-xl flex items-center justify-around p-1">
+            <div class="flex text-[#11142f]">
+                <span class=" font-bold text-3xl w-4 h-8 flex items-center justify-center">1</span>
+                <span class=" font-bold text-3xl w-4 h-8 flex items-end justify-center">8</span>
+                <span class=" font-bold text-3xl w-4 h-8 flex items-start justify-center">5</span>
+            </div>
+
+            <span class=" font-medium text-sm text-[#9d9ca2]">GB LEFT</span>
+        </div>
+        <div class="p-5 text-[#737FBA] font-medium">
+            <p>you've used <span class="text-[#99A1D6]">815 GB</span> of your storage
+                <div class="h-4 w-full border-2 border-[#24225A] rounded-full bg-[#15204B]">
+                    <div class="w-[80%] h-full bg-gradient-to-l from-[#F85496] to-[#F99A9E] rounded-full flex items-center justify-end">
+                        <div class="h-full w-3 rounded-full bg-[#FBFAFF]"></div>
+                    </div>
+                </div>
+                <div class="flex justify-between">
+                    <p class="text-[#99A1D6]">0 GB</p>
+                    <p class="text-[#99A1D6]">1000 Gb</p>
+                </div>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="absolute md:w-full h-full md:flex md:items-end md:translate-y-24 -z-10 justify-center bg"><img src="bg-desktop.png" alt=""></div>
+<div class="md:hidden absolute w-full h-full flex items-end justify-center -z-10"><img src="bg-mobile.png" alt=""></div>
+</body>
+</html>
